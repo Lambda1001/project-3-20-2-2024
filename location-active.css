@@ -1,0 +1,165 @@
+:root{
+    --background-color:#2a1d1d;
+    --background-color-light: #2e262665;
+    --color: #f6fcf3;
+    --font-family: "Abel","Bahnschrift";
+    --font-size: 1.2rem;
+    --nav-size: 80px;
+    --border: 1px solid #f8c5ad;
+    --hover-color: #1b4ec5;
+    --testimonial-width: 300px;
+    --testimonial-height: 300px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:var(--font-family);
+    scrollbar-color: var(--background-color);
+    scrollbar-width: 10px;
+}
+body{
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+hr{
+    width: 80%;
+    height: 2px;
+    background-color: var(--color);
+}
+.hr-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: var(--background-color-light);
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.back-button i{
+    color: var(--color);
+    font-size: 23px;
+    cursor: pointer;
+}
+.location-page{
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color);
+}
+.image-container{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, var(--background-color), transparent), url(img/pexels-光曦-刘-16909002.jpg) center center/cover no-repeat ;
+    display: flex;
+    align-items: end;
+}
+.image-container h2{
+    margin: 10px;
+    text-align: center;
+    font-size: calc(var(--font-size)*1.8);
+    color: var(--color);
+}
+.location-details{
+    background-color: var(--background-color-light);
+    padding: 20px;
+    margin:10px;
+}
+.location-details p{
+    color:var(--color);
+    font-size: var(--font-size);
+}
+.location-tours{
+    display: flex;   
+    margin: 10px;
+    background-color: var(--background-color-light);
+    overflow-x: scroll;
+    scrollbar-color: var(--background-color);
+    scrollbar-width: 10px;
+}
+.location-tours div{
+    width: 500px;
+    min-height: var(--testimonial-height);
+    background-color: var(--background-color);
+    color: var(--color);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location-tours .loc-title{
+    font-size: calc(var(--font-size)*1.7);
+    padding: 20px;
+}
+.location-tours div h2{
+    margin-bottom: 20px;
+}
+.location-tours a{
+    margin-top: 10px;
+}
+.location-testimonials{
+    display: flex;
+    margin: 10px;
+    background-color: var(--background-color-light);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location-testimonials .loc-title{
+    color:var(--color);
+    font-size: calc(var(--font-size)*1.7);
+}
+.banner-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+.testimonial-banner{
+    width: var(--testimonial-width);
+    height: auto;
+    margin: 10px;
+    border:var(--border);
+    background-color: var(--background-color);
+    color: var(--color);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: 300ms ease-in;
+}
+.testimonial-banner:hover{
+    scale: 1.2;
+}
+.person-image-container{
+    width: calc(var(--testimonial-width)*0.4);
+    height: calc(var(--testimonial-height)*0.4);
+    background: url(img/c37739f4eabfe127b2af7a565043b4f0-3576230635.jpg) center center/cover no-repeat;
+    border-radius: 50%;
+    background-color: var(--background-color-light);
+}
+.star-rating{
+    height: 50px;
+    width: 200px;
+    background:var(--background-color-light);
+    margin-top: 20px;
+}
+.testimonial-words{
+    margin: 10px;
+}
